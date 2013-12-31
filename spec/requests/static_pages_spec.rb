@@ -44,7 +44,7 @@ describe "StaticPages" do
 	end
 
 	describe "Contact" do
-		it "should have the content 'Contact'" do
+		it "should have the content as 'Contact'" do
 			visit '/static_pages/contact'
 			page.should have_selector('h1', :text => 'Contact')
 		end
