@@ -1,6 +1,8 @@
 MHSampleapp::Application.routes.draw do
   
-  get "users/new"
+  resources :users
+  
+  #get "users/new"
 
   #match '/', to: 'static_pages#home'
   match '/help', to: 'static_pages#help'
